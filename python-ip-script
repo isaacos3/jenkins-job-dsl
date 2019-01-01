@@ -1,0 +1,10 @@
+job('run-python-ip-script') {
+    scm {
+        git('git://github.com/beerkeeper/python-ip-script.git')
+    }
+    steps {
+      python{
+        command('python main.py')
+      }
+    }
+}
